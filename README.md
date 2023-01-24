@@ -41,6 +41,21 @@ This project is set up to be deployed to AWS using [AWS Amplify](https://aws.ama
 3. Make your changes
 4. Open a pull request
 
+
+In order to create this Lambda function you need to follow these steps:
+
+Go to the AWS Lambda console.
+Click on Create function
+Choose Author from scratch
+Give a name to your function and choose Python 3.x as runtime.
+In the Function code section you can either write the code or upload it as a .py file.
+Click on Create function
+You can test your function by clicking on the Test button and you can also trigger it using an API Gateway or other AWS services.
+
+Please note that you will also need to configure the IAM role that the Lambda function uses to have the appropriate permissions to interact with the EC2 API.
+
+Additionally, you should also handle the errors, pagination and also securing your access keys and region before deploying it to production.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
